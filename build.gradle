@@ -30,7 +30,3 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
-
-public interface JournalEntryRepository extends JpaRepository<JournalEntry, Long> {
-	List<JournalEntry> findByDate(LocalDate date);
-}
